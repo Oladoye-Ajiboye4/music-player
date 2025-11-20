@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AudioWave - Music Streaming</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="animated-background"></div>
+    
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar Navigation -->
+            <nav class="col-md-2 sidebar">
+                <div class="sidebar-header">
+                    <i class="bi bi-disc-fill logo-icon"></i>
+                    <h4 class="logo-text">AudioWave</h4>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-house-door-fill"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-search"></i>
+                            <span>Search</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-music-note-list"></i>
+                            <span>Library</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-collection-play"></i>
+                            <span>Playlists</span>
+                        </a>
+                    </li>
+                </ul>
+                
+                <button class="btn-create-playlist">Create Playlist</button>
+            </nav>
+
+            <!-- Main Content -->
+            <main class="col-md-10 main-content">
+                <!-- Header -->
+                <header class="main-header">
+                    <div class="greeting-section">
+                        <h1 class="greeting-title">Good Evening, Alex</h1>
+                        <p class="greeting-subtitle">Here's what's new and trending for you</p>
+                    </div>
+                    
+                    <div class="header-actions">
+                        <button class="btn-notification">
+                            <i class="bi bi-bell-fill"></i>
+                        </button>
+                        
+                        <div class="profile-dropdown">
+                            <input type="checkbox" id="profile-toggle" class="dropdown-toggle-input">
+                            <label for="profile-toggle" class="profile-icon">
+                                <i class="bi bi-person-circle"></i>
+                            </label>
+                            <div class="dropdown-menu-custom">
+                                <a href="#" class="dropdown-item-custom">
+                                    <i class="bi bi-box-arrow-in-right"></i>
+                                    <span>Sign In</span>
+                                </a>
+                                <a href="#" class="dropdown-item-custom">
+                                    <i class="bi bi-person-plus-fill"></i>
+                                    <span>Sign Up</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <!-- For You Section -->
+                <section class="content-section">
+                    <h2 class="section-title">For You</h2>
+                    
+                    <div class="row g-4">
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                            <div class="playlist-card">
+                                <div class="card-image-wrapper">
+                                    <img src="https://images.unsplash.com/photo-1614854262318-831574f15f1f?w=400&h=400&fit=crop" alt="Synthwave Dreams" class="card-image">
+                                    <button class="play-button">
+                                        <i class="bi bi-play-fill"></i>
+                                    </button>
+                                </div>
+                                <h3 class="card-title">Synthwave Dreams</h3>
+                                <p class="card-subtitle">Playlist</p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                            <div class="playlist-card">
+                                <div class="card-image-wrapper">
+                                    <img src="https://images.unsplash.com/photo-1506157786151-b8491531f063?w=400&h=400&fit=crop" alt="Daily Mix 1" class="card-image">
+                                    <button class="play-button">
+                                        <i class="bi bi-play-fill"></i>
+                                    </button>
+                                </div>
+                                <h3 class="card-title">Daily Mix 1</h3>
+                                <p class="card-subtitle">Playlist</p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                            <div class="playlist-card">
+                                <div class="card-image-wrapper">
+                                    <img src="https://images.unsplash.com/photo-1571330735066-03aaa9429d89?w=400&h=400&fit=crop" alt="Cyber-Funk" class="card-image">
+                                    <button class="play-button">
+                                        <i class="bi bi-play-fill"></i>
+                                    </button>
+                                </div>
+                                <h3 class="card-title">Cyber-Funk</h3>
+                                <p class="card-subtitle">Artist Radio</p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                            <div class="playlist-card">
+                                <div class="card-image-wrapper">
+                                    <img src="https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=400&h=400&fit=crop" alt="Chill Beats" class="card-image">
+                                    <button class="play-button">
+                                        <i class="bi bi-play-fill"></i>
+                                    </button>
+                                </div>
+                                <h3 class="card-title">Chill Beats</h3>
+                                <p class="card-subtitle">Playlist</p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                            <div class="playlist-card">
+                                <div class="card-image-wrapper">
+                                    <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=400&h=400&fit=crop" alt="Deep Focus" class="card-image">
+                                    <button class="play-button">
+                                        <i class="bi bi-play-fill"></i>
+                                    </button>
+                                </div>
+                                <h3 class="card-title">Deep Focus</h3>
+                                <p class="card-subtitle">Playlist</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Trending Now Section -->
+                <section class="content-section">
+                    <h2 class="section-title">Trending Now</h2>
+                    
+                    <div class="row g-4">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="trending-card">
+                                <div class="trending-image-wrapper">
+                                    <img src="https://images.unsplash.com/photo-1495954484750-af469f2f9be5?w=400&h=400&fit=crop" alt="Sunset Cruise" class="trending-image">
+                                </div>
+                                <div class="trending-info">
+                                    <h3 class="trending-title">Sunset Cruise</h3>
+                                    <p class="trending-artist">Starlight Drive</p>
+                                </div>
+                                <button class="btn-more">
+                                    <i class="bi bi-three-dots"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-4 col-md-6">
+                            <div class="trending-card">
+                                <div class="trending-image-wrapper">
+                                    <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=400&h=400&fit=crop" alt="Neon Nights" class="trending-image">
+                                </div>
+                                <div class="trending-info">
+                                    <h3 class="trending-title">Neon Nights</h3>
+                                    <p class="trending-artist">Vaporwave Visions</p>
+                                </div>
+                                <button class="btn-more">
+                                    <i class="bi bi-three-dots"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-4 col-md-6">
+                            <div class="trending-card">
+                                <div class="trending-image-wrapper">
+                                    <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?w=400&h=400&fit=crop" alt="Digital Drift" class="trending-image">
+                                </div>
+                                <div class="trending-info">
+                                    <h3 class="trending-title">Digital Drift</h3>
+                                    <p class="trending-artist">Glitch Mob</p>
+                                </div>
+                                <button class="btn-more">
+                                    <i class="bi bi-three-dots"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

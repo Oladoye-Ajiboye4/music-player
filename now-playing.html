@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Echo - Now Playing</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="now-playing.css">
+</head>
+<body>
+    <div class="animated-background-player"></div>
+    
+    <div class="container-fluid">
+        <!-- Header -->
+        <header class="player-header">
+            <div class="header-left">
+                <i class="bi bi-disc-fill logo-icon-player"></i>
+                <h4 class="logo-text-player">Quantum Echo</h4>
+            </div>
+            
+            <nav class="header-nav">
+                <a href="index.html" class="nav-link-player">Home</a>
+                <a href="#" class="nav-link-player">Browse</a>
+                <a href="#" class="nav-link-player">Library</a>
+                <button class="btn-upgrade">Upgrade</button>
+            </nav>
+            
+            <div class="profile-dropdown-player">
+                <input type="checkbox" id="profile-toggle-player" class="dropdown-toggle-input-player">
+                <label for="profile-toggle-player" class="profile-icon-player">
+                    <i class="bi bi-person-circle"></i>
+                </label>
+                <div class="dropdown-menu-player">
+                    <a href="#" class="dropdown-item-player">
+                        <i class="bi bi-box-arrow-in-right"></i>
+                        <span>Sign In</span>
+                    </a>
+                    <a href="#" class="dropdown-item-player">
+                        <i class="bi bi-person-plus-fill"></i>
+                        <span>Sign Up</span>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Player Section -->
+        <div class="player-container">
+            <!-- Album Artwork -->
+            <div class="artwork-container">
+                <div class="artwork-glow"></div>
+                <div class="artwork-wrapper">
+                    <img src="https://images.unsplash.com/photo-1528722828814-77b9b83aafb2?w=800&h=800&fit=crop" alt="Quantum Echo" class="artwork-image">
+                    <div class="artwork-overlay"></div>
+                </div>
+                <div class="vinyl-disc"></div>
+            </div>
+
+            <!-- Song Information -->
+            <div class="song-info">
+                <h1 class="song-title">Quantum Echo</h1>
+                <p class="song-artist">Starlight Synthesizer</p>
+                <p class="song-album">Neon Dreams</p>
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="progress-section">
+                <div class="time-display">
+                    <span class="time-current">1:23</span>
+                    <span class="time-total">4:56</span>
+                </div>
+                <div class="progress-bar-container">
+                    <div class="progress-bar-bg">
+                        <div class="progress-bar-fill"></div>
+                        <div class="progress-bar-thumb">
+                            <div class="thumb-pulse"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Playback Controls -->
+            <div class="controls-main">
+                <button class="control-btn btn-shuffle">
+                    <i class="bi bi-shuffle"></i>
+                </button>
+                <button class="control-btn btn-prev">
+                    <i class="bi bi-skip-start-fill"></i>
+                </button>
+                <button class="control-btn btn-play">
+                    <i class="bi bi-play-fill"></i>
+                </button>
+                <button class="control-btn btn-next">
+                    <i class="bi bi-skip-end-fill"></i>
+                </button>
+                <button class="control-btn btn-repeat">
+                    <i class="bi bi-repeat"></i>
+                </button>
+            </div>
+
+            <!-- Volume and Additional Controls -->
+            <div class="controls-secondary">
+                <button class="secondary-btn btn-queue">
+                    <i class="bi bi-list-ul"></i>
+                </button>
+                
+                <div class="volume-control">
+                    <button class="secondary-btn btn-volume">
+                        <i class="bi bi-volume-up-fill"></i>
+                    </button>
+                    <div class="volume-slider-container">
+                        <div class="volume-bar-bg">
+                            <div class="volume-bar-fill"></div>
+                            <div class="volume-bar-thumb">
+                                <div class="volume-thumb-pulse"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="secondary-btn btn-favorite">
+                    <i class="bi bi-heart"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
